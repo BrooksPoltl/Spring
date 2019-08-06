@@ -30,7 +30,7 @@ public class TennisCoach implements Coach {
 	}
 	
 	@Autowired
-	public void setFortuneService(FortuneService theFortuneService) {
+	public void doCrazyStuff(FortuneService theFortuneService) {
 		this.fortuneService = theFortuneService;
 	}
 	
