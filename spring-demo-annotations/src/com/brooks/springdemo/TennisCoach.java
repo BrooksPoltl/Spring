@@ -4,9 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-
 public class TennisCoach implements Coach {
-
+	
+	@Autowired
 	private FortuneService fortuneService;
 	
 	public TennisCoach() {
@@ -29,9 +29,9 @@ public class TennisCoach implements Coach {
 		return fortuneService.getFortune();
 	}
 	
-	@Autowired
-	public void doCrazyStuff(FortuneService theFortuneService) {
-		this.fortuneService = theFortuneService;
-	}
-	
+//	@Autowired
+//	public void doCrazyStuff(FortuneService theFortuneService) {
+//		this.fortuneService = theFortuneService;
+//	}
+//	
 }
