@@ -5,8 +5,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+
 @Component
-@Scope("prototype")
 public class TennisCoach implements Coach {
 	
 	@Autowired
@@ -17,12 +17,7 @@ public class TennisCoach implements Coach {
 		System.out.println(">> TennisCoach: inside default constructor");
 	}
 	
-//	@Autowired
-//	public TennisCoach(FortuneService theFortuneService) {
-//		fortuneService = theFortuneService;
-//	}
-	
-	
+
 	@Override
 	public String getDailyWorkout() {
 		return "work on backhand volley";
@@ -33,6 +28,15 @@ public class TennisCoach implements Coach {
 		return fortuneService.getFortune();
 	}
 	
+
+	
+//	@Autowired
+//	public TennisCoach(FortuneService theFortuneService) {
+//		fortuneService = theFortuneService;
+//	}
+	
+	
+
 //	@Autowired
 //	public void doCrazyStuff(FortuneService theFortuneService) {
 //		this.fortuneService = theFortuneService;
