@@ -16,7 +16,9 @@
     </bean>
     
  	<bean id="myCoach"
- 		class="com.brooks.springdemo.TrackCoach">	
+ 		class="com.brooks.springdemo.TrackCoach"
+ 		scope = "prototype"
+ 		>	
  		
  		<!-- set up constructor injection -->
  		<constructor-arg ref="myFortuneService" />
